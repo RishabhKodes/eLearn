@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Learn</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/kickstart.css" media="all" />                  
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="all" />                         
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/kickstart.js"></script>                               
+</head>
+<body>
+
+<ul class="menu">
+<li class="current"><a href="/">Home</a></li>
+<li><a href="/classes">Classes</a></li>
+
+</ul>
+
+<div class="grid">
+<div class="col_12">
+	<div class="col_9">
+	{{{body}}}
+	</div>
+	
+	<div class="col_3">
+		{{>login}}
+	</div>
+	
+	<hr />
+
+		{{>classes}}
+	</div>
+</div>
+
+
+
+<div class="clear"></div>
+<div id="footer">
+&copy; Copyright 2020–2021 All Rights Reserved. This website was built by <a href="http://www.rishabhbhandari.me">e33or_assasin</a>
+</div>  
+
+</body></html>
