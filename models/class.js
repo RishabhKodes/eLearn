@@ -27,5 +27,5 @@ module.exports.getClasses = function(callback, limit){
 
 // Fetch Single Class
 module.exports.getClassById = function(id, callback){
-	Class.findById(id, callback);
+	Class.findById(id, callback).lean();
 }
