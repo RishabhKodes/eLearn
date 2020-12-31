@@ -3,7 +3,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is the time for online learning all the teachers are going online so I created a web app where teachers can make their online classes, upload materials and the students can then enroll in those courses and access all the resources. 
+This is the time for online learning all the classes are going online so I created a web app where teachers can make their online classes, upload materials and the students can then enroll in those courses and access all the resources. 
 You can enroll on the website as a Student or an Instructor. 
 1. If you are signed in as a **Student** you can view and enroll in any of the courses being offered by the Teachers on the portal.  
 2. If you are signed in as a **Teacher** you can enroll in any course and add a lesson/material of yours which can be studied by any Student.  
