@@ -3,9 +3,11 @@ var router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
-// Include Different Models
+// Include User Model
 var User = require('../models/user');
+// Include Student Model
 var Student = require('../models/student');
+// Include Instructor Model
 var Instructor= require('../models/instructor');
 
 // User Register
@@ -16,17 +18,17 @@ router.get('/register', function(req, res, next) {
 // Register User
 router.post('/register', function(req, res, next) {
  	// Get Form Values
-	var first_name = req.body.first_name;
-	var last_name = req.body.last_name;
-	var street_address = req.body.street_address;
-	var city = req.body.city;
-	var state = req.body.state;
-	var zip = req.body.zip;
-	var email = req.body.email;
-	var username = req.body.username;
-	var password = req.body.password;
-	var password2 = req.body.password2;
-	var type = req.body.type;
+	var first_name     	= req.body.first_name;
+	var last_name     	= req.body.last_name;
+	var street_address  = req.body.street_address;
+	var city     		= req.body.city;
+	var state    		= req.body.state;
+	var zip     		= req.body.zip;
+	var email    		= req.body.email;
+	var username 		= req.body.username;
+	var password 		= req.body.password;
+	var password2 		= req.body.password2;
+	var type            = req.body.type;
 
 	// Form Validation
 	req.checkBody('first_name', 'First name field is required').notEmpty();
