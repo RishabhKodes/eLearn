@@ -13,7 +13,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local'),Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/elearn');
+mongoose.connect(process.env.DB_LINK, { useUnifiedTopology: true }, { useNewUrlParser: true });
 var db = mongoose.connection;
 async = require('async');
 

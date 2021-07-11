@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcryptjs');
+var Instructor = require('../models/instructor');
+var Student = require('../models/student');
 
 // User Schema
 var UserSchema = mongoose.Schema({
@@ -46,8 +48,16 @@ module.exports.saveStudent = function(newUser, newStudent, callback){
 		if(err) throw errl
 		// Set hash
 		newUser.password = hash;
-		console.log('Student is being saved');
-		async.parallel([newUser.save, newStudent.save], callback);
+
+		User.insertMany(newUser, (err)=>{
+			if(err) throw err;
+			console.log('User added!');
+			Student.insertMany(newStudent, (err)=>{
+				if(err) throw err;
+				console.log('Student added!');
+			});
+
+		})
 	});
 }
 
@@ -57,7 +67,14 @@ module.exports.saveInstructor = function(newUser, newInstructor, callback){
 		if(err) throw errl
 		// Set hash
 		newUser.password = hash;
-		console.log('Instructor is being saved');
-		async.parallel([newUser.save, newInstructor.save], callback);
+		User.insertMany(newUser, (err)=>{
+			if(err) throw err;
+			console.log('User added!');
+			Instructor.insertMany(newInstructor, (err)=>{
+				if(err) throw err;
+				console.log('Instructor added!');
+			});
+
+		})
 	});
 }
