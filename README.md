@@ -58,10 +58,10 @@ Any contributions you make are **greatly appreciated**.
 <!-- CONTACT -->
 ## Contact Me
 
-**Rishabh Bhandari -** [LinkedIn](https://www.linkedin.com/in/rishabh-bhandari-ba5778168/)
+**Rishabh Bhandari -** [Website](https://rishabhbhandari.me/)
 [Email](rishabhbhandari6@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/rishabh-bhandari-ba5778168/)
 
-**Project Link -** [GitHub](https://github.com/RishabhKodes/eLearn)
 
 <p align="center">
 Made with :heart: <br>
